@@ -59,3 +59,74 @@ c2 = float(linha2[2])
 valor = b1*c1 + b2*c2
 print(f"VALOR A PAGAR: R$ {valor:.2f}")
 """
+"""
+raio = float(input())
+pi = 3.14159
+calc_volume = (4.0/3.0)*pi*raio**3
+
+print(f"VOLUME = {calc_volume:.3f}")
+"""
+"""
+linha = input().split()
+
+val1 = float(linha[0])
+val2 = float(linha[1])
+val3 = float(linha[2])
+
+pi = 3.14159
+
+areaT = (val1*val3)/2
+areaC = pi*val3**2
+areaTz = ((val1+val2)*val3)/2
+areaQ = val2**2
+areaR = val1*val2
+
+print(f"TRIANGULO: {areaT:.3f}")
+print(f"CIRCULO: {areaC:.3f}")
+print(f"TRAPEZIO: {areaTz:.3f}")
+print(f"QUADRADO: {areaQ:.3f}")
+print(f"RETANGULO: {areaR:.3f}")
+"""
+"""
+linha = input().split()
+
+val1 = int(linha[0])
+val2 = int(linha[1])
+val3 = int(linha[2])
+
+maiorAb = (val1+val2+abs(val1-val2))/2 #nesse caso abs() quer dizer absolute, ou seja a operacao modulo da conta
+maiorBc = int((maiorAb+val3+abs(maiorAb-val3))/2)
+
+print(f"{maiorBc} eh o maior")
+"""
+"""
+distancia = int(input())
+combustivelGasto = float(input())
+
+consumoMedio = distancia/combustivelGasto
+
+print(f"{consumoMedio:.3f} km/l")
+"""
+"""
+linha1 = input().split()
+linha2 = input().split()
+
+coordx1 = float(linha1[0])
+coordx2 = float(linha2[0])
+
+coordy1 = float(linha1[1])
+coordy2 = float(linha2[1])
+
+distancia = ((coordx2-coordx1)**2+(coordy2-coordy1)**2)**(1/2)
+
+print(f"{distancia:.4f}")
+"""
+diferencaKm = int(input())
+tempo = 60
+
+quilometrosMin = diferencaKm/tempo
+
+tempoDistancia = diferencaKm/quilometrosMin
+
+
+print(f"{tempoDistancia} minutos")
